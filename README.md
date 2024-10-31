@@ -7,5 +7,5 @@
 
 ## ToDo
 - fill excludes in pyproject.toml tools with .gitignore
-- add Makefile
+- adjust Makefile
 - adjust pre-commit
