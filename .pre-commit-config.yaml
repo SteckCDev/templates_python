@@ -3,16 +3,15 @@ default_language_version:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
-      - id: check-added-large-files
       - id: check-ast
-      - id: check-merge-conflict
       - id: check-yaml
       - id: check-toml
+      - id: check-merge-conflict
+      - id: check-added-large-files
       - id: debug-statements
       - id: detect-private-key
-      - id: end-of-file-fixer
         types: [python]
       - id: fix-byte-order-marker
       - id: fix-encoding-pragma
@@ -21,9 +20,10 @@ repos:
         args: [--fix=lf]
         types: [python]
       - id: trailing-whitespace
+      - id: end-of-file-fixer
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.5.7
+    rev: v0.7.1
     hooks:
       - id: ruff
         args: [--fix]
